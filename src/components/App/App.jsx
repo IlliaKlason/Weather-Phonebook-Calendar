@@ -26,7 +26,7 @@ const NotFoundPageLazy = lazy(() => import('../../pages/NotFoundPage'));
 
 const App = () => {
   let time = new Date().getHours();
-  const [theme, setTheme] = useState(time <= 23 ? themes.light : themes.dark);
+  const [theme, setTheme] = useState(time <= 19 ? themes.light : themes.dark);
 
   const toggleTheme = () =>
     setTheme(prevTheme =>
@@ -37,8 +37,6 @@ const App = () => {
   const fetchloading = useSelector(authSelectors.loadingFetchSelector);
 
   const dispatch = useDispatch();
-
-  //GET_CURRENT_USER
 
   useEffect(() => {
     dispatch(authOperations.fetchUser());
@@ -60,15 +58,17 @@ const App = () => {
             </div>
 
             <Routes>
-              <Route
-                exact
-                path="/"
-                element={
-                  <Suspense fallback={<Loader />}>
-                    <HomePage />
-                  </Suspense>
-                }
-              ></Route>
+              <Route element={<PublicRoute />}>
+                <Route
+                  exact
+                  path="/"
+                  element={
+                    <Suspense fallback={<Loader />}>
+                      <HomePage />
+                    </Suspense>
+                  }
+                ></Route>
+              </Route>
               {/* //////////////////////// */}
               <Route element={<PublicRoute />}>
                 <Route

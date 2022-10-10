@@ -323,7 +323,12 @@ input,
   padding: 10px;
   outline: none;
 }
-
+.reset:hover,
+.reset:focus {
+  background-color: #ffd700;
+  border: 1px solid #0057b8;
+  color: black;
+}
 todayButton:hover {
   cursor: pointer;
 }

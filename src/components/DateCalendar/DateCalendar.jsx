@@ -36,13 +36,10 @@ class DateCalendar extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ loading: true });
+    // this.setState({ loading: false });
     this.setDate(this.props.day, this.props.month - 1, this.state.year);
   }
-  componentWillUnmount() {
-    // this.setState({ loading: true });
-    console.log('csda');
-  }
+
   formatDate(day, month, year) {
     day = day.toString().length < 2 ? '0' + day : day;
     month += 1;

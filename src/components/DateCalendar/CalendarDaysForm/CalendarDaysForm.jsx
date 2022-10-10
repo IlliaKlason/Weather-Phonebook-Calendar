@@ -130,12 +130,7 @@ const CalendarDaysForm = ({
         <div className="days">
           {days}
           <div className="btn-back-wrap">
-            <button
-              className="reset"
-              href="#"
-              onClick={resetDate}
-              style={checkThemesBtnBack}
-            >
+            <button className="reset" href="#" onClick={resetDate}>
               {t('calendar.buttonBackToday')}
             </button>
           </div>
