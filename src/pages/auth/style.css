@@ -1,0 +1,7 @@
+.home-page{
+opacity: 0;
+}
+.home-page.appear-done{
+  opacity: 1;
+  transition: 0,5s ease-in-out;
+}

@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  font-size: 24px;
+  font-weight: 700;
+}
+.linkContainer {
+  display: flex;
+  align-items: center;
+  color: rgb(100, 60, 120);
+  font-size: 20px;
+  text-decoration: none;
+}
+.link {
+  margin-right: 7px;
+}
+.linkContainer:hover,
+.linkContainer:focus {
+  color: rgb(154, 84, 189);
+}

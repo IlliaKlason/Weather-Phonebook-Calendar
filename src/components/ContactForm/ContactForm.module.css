@@ -1,0 +1,79 @@
+.fontFamilyText {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+.form {
+  width: 370px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.formLight {
+  background: #dddaddb1;
+  composes: form;
+  border: solid 2px rgb(36, 2, 2);
+}
+.formDark {
+  background: #dddaddb1;
+  composes: form;
+  border: solid 2px rgb(151, 141, 167);
+}
+.formLight:focus,
+.formLight:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 1), -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(0, 0, 0, 0.8), 0 0 90px rgba(0, 0, 0, 0.1) inset;
+}
+.formDark:focus,
+.formDark:hover {
+  box-shadow: 0 1px 4px rgb(162, 139, 167),
+    -23px 0 20px -23px rgba(0, 0, 0, 0.8),
+    23px 0 20px -23px rgba(237, 189, 241, 0.8),
+    0 0 90px rgba(232, 167, 232, 0.1) inset;
+}
+.headerLight {
+  text-align: center;
+  composes: fontFamilyText;
+  color: #010101;
+}
+.headerDark {
+  text-align: center;
+  composes: fontFamilyText;
+  color: #f2eeee;
+}
+
+.headerListLight {
+  text-align: center;
+  composes: fontFamilyText;
+  color: #010101;
+}
+.headerListDark {
+  text-align: center;
+  composes: fontFamilyText;
+  color: #f2eeee;
+}
+.btnAdd {
+  composes: fontFamilyText;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 14px;
+  display: block;
+  margin: 20px auto 0;
+  padding: 5px;
+  height: 40px;
+  width: 130px;
+  border-radius: 10px;
+  background-color: #0057b8;
+  border-color: #ffd700;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px -5px rgba(51, 0, 54, 0.6);
+  transition: all 200ms ease-in-out;
+}
+
+.btnAdd:focus,
+.btnAdd:hover {
+  color: white;
+  background-color: #ffd700;
+  border-color: #0057b8;
+  transform: scale3d(1.15, 1.15, 1.15);
+}

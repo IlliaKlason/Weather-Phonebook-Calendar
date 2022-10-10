@@ -1,0 +1,67 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to bottom,
+    #0057b8,
+    #0057b8 50%,
+    #ffd700 50%,
+    #ffd700
+  );
+  animation-name: appear;
+  animation-duration: 300ms;
+}
+
+.modal {
+  min-width: 450px;
+
+  position: relative;
+
+  padding: 20px;
+  border-radius: 20px;
+  min-height: calc(50vh - 80px);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slide-in;
+  animation-duration: 0.5s;
+  box-shadow: 5px 5px 8px #0057b8;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.btnClose {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  left: 200px;
+  cursor: pointer;
+  color: #f1ecf1;
+  background: #0057b8;
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid #ffd700;
+}
+
+.btnClose:hover,
+.btnClose:focus {
+  color: #ffd700;
+}
+.title {
+  color: white;
+  margin: 0;
+}

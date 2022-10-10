@@ -1,0 +1,72 @@
+.root {
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.root.appear-done {
+  opacity: 1;
+  transform: none;
+  transition: 0.3s ease-in-out;
+}
+.root.exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+.banner .enter {
+  opacity: 0;
+}
+
+.banner .enter-done {
+  opacity: 1;
+
+  transition: 0.5s ease-in-out;
+}
+
+.banner .exit-active {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.btnAdd {
+  cursor: pointer;
+  background-color: #ffffff00;
+}
+.btnAdd .enter {
+  background-color: #ffffff00;
+  opacity: 0;
+}
+
+.btnAdd .enter-done {
+  background-color: #ffffff00;
+  opacity: 1;
+  transform: rotateY(-180deg);
+  transition: 0.5s ease-in-out;
+}
+
+.btnAdd .exit-active {
+  background-color: #ffffff00;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transform: rotateY(180deg);
+}
+.btnClose {
+  cursor: pointer;
+  background-color: #ffffff00;
+}
+.btnClose .enter {
+  background-color: #ffffff00;
+  opacity: 0;
+}
+
+.btnClose .enter-done {
+  background-color: #ffffff00;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+  transform: rotate(-180deg);
+}
+
+.btnClose .exit-active {
+  background-color: #ffffff00;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+  transform: rotate(180deg);
+}

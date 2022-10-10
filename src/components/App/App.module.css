@@ -1,0 +1,32 @@
+.app {
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 800px;
+  overflow-x: hidden;
+}
+.themeWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.appLight {
+  composes: app;
+  background-image: linear-gradient(
+    to bottom,
+    #0057b8,
+    #0057b8 50%,
+    #ffd700 50%,
+    #ffd700
+  );
+}
+.appDark {
+  composes: app;
+  background-image: linear-gradient(
+    to bottom,
+    #ff0000 50%,
+    #ff0000,
+    #000,
+    #000 50%
+  );
+}
