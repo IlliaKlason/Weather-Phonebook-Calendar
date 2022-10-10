@@ -40,7 +40,7 @@ class DateCalendar extends React.Component {
     this.setDate(this.props.day, this.props.month - 1, this.state.year);
   }
   componentWillUnmount() {
-    this.setState({ loading: true });
+    // this.setState({ loading: true });
     console.log('csda');
   }
   formatDate(day, month, year) {
@@ -144,7 +144,8 @@ class DateCalendar extends React.Component {
 
     return (
       <>
-        {this.state.loading && <Loader />}
+        {/* {this.state.loading && <Loader />} */}
+
         <CalendarHeader />
 
         <div className="section-container">
