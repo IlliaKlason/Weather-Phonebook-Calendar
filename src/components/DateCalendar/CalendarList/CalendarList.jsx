@@ -116,9 +116,7 @@ const CalendarList = ({ data }) => {
   };
 
   const confirmEdit = editedName => {
-    console.log(editedName);
     if (editedName.name === editActiveEvent.name) {
-      console.log(editActiveEvent);
       toast.warning(`IT'S the same TODO 👐:))`);
       setEditActiveEvent(null);
       return;

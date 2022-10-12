@@ -162,7 +162,6 @@ const Contacts = () => {
 
   useEffect(() => {
     if (!deleteContactId) return;
-    console.log(deleteContactId);
     dispatch(deleteContact(deleteContactId));
     toast.success(
       checkLang === 'en'

@@ -52,7 +52,7 @@
     "calendar":{
     "title":"Календар",
     "buttonBackToday":"Повернутись до сьогодні",
-    "event": "Додайте поді",
+    "event": "Додайте подію",
     "placeholder": "Нова Подія..."
   },
   "Weather" :{

@@ -3,8 +3,7 @@ import { getPeriodData } from './currentPeriodOperation';
 
 const year = String(new Date().getFullYear());
 const month = String(new Date().getMonth() + 1);
-console.log(`year`, year);
-console.log(`month`, month);
+
 
 const initialState = {
   date: { month, year },

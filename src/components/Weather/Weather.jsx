@@ -85,13 +85,11 @@ function Weather() {
               error: true,
               loading: false,
             });
-          console.log(res.data);
           setWeather({ data: res.data, error: false, loading: false });
         })
         .catch(error => {
           setWeather({ ...weather, data: {}, error: true, loading: false });
           setQuery('');
-          console.log(error.message);
         });
     }
   };
